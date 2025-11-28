@@ -8,3 +8,4 @@ CREATE TABLE pokemons_tipos (
 -- migrate:down
 
 DROP TABLE pokemons_tipos;
+
