@@ -1,5 +1,4 @@
 -- migrate:up
--- limpieza según los pokemon que hay
 INSERT INTO pokemons_tipos (pokemon_id, tipo_id) VALUES (1, 10);
 INSERT INTO pokemons_tipos (pokemon_id, tipo_id) VALUES (1, 14);
 INSERT INTO pokemons_tipos (pokemon_id, tipo_id) VALUES (2, 10);
