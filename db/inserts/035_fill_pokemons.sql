@@ -1,5 +1,5 @@
 -- migrate:up 
-
+-- LIMPIAR ESTO TT [creo q nos faltan 2 pokemon del excel...] + poner los correctos datos como geeneracion/juego,etc...
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
             peso, altura, velocidad, ataque, bmi, imagen, amistad_base, defensa,
@@ -3989,7 +3989,7 @@ INSERT INTO pokemons (
             254, 55.2, 1.9, 145, 110, 15.3, 'https://archives.bulbagarden.net/media/upload/6/67/254Sceptile-Mega.png',
             70, 75, 1059860, 'Mega Sceptile', 45,
             70, 1, 5, 2, 3,
-            1, 1, 2, 171, 4, 5
+            1, 1, 2, 171, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4041,7 +4041,7 @@ INSERT INTO pokemons (
             257, 52.0, 1.9, 100, 160, 14.4, 'https://archives.bulbagarden.net/media/upload/f/fa/257Blaziken-Mega.png',
             70, 80, 1059860, 'Mega Blaziken', 45,
             80, 1, 8, 2, 2,
-            1, 1, 2, 174, 4, 5
+            1, 1, 2, 174, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4093,7 +4093,7 @@ INSERT INTO pokemons (
             260, 102.0, 1.9, 70, 150, 28.3, 'https://archives.bulbagarden.net/media/upload/9/98/260Swampert-Mega.png',
             70, 110, 1059860, 'Mega Swampert', 45,
             100, 1, 2, 2, 3,
-            1, 1, 2, 175, 4, 5
+            1, 1, 2, 175, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4145,7 +4145,7 @@ INSERT INTO pokemons (
             263, 17.5, 0.4, 60, 30, 109.4, 'https://archives.bulbagarden.net/media/upload/b/b0/263Zigzagoon-Galar.png',
             0, 41, 1000000, 'Galarian Zigzagoon', 255,
             38, 1, 3, 4, 5,
-            2, 1, 1, 178, 3, 5
+            2, 1, 1, 178, 3, 4
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4171,7 +4171,7 @@ INSERT INTO pokemons (
             264, 32.5, 0.5, 100, 70, 130.0, 'https://archives.bulbagarden.net/media/upload/8/8e/264Linoone-Galar.png',
             0, 61, 1000000, 'Galarian Linoone', 90,
             78, 1, 9, 4, 5,
-            2, 1, 1, 179, 3, 5
+            2, 1, 1, 179, 3, 4
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4418,7 +4418,7 @@ INSERT INTO pokemons (
             282, 48.4, 1.6, 100, 85, 18.9, 'https://archives.bulbagarden.net/media/upload/2/20/282Gardevoir-Mega.png',
             35, 65, 1250000, 'Mega Gardevoir', 45,
             68, 1, 9, 2, 2,
-            4, 1, 7, 192, 4, 5
+            4, 1, 7, 192, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4691,7 +4691,7 @@ INSERT INTO pokemons (
             302, 161.0, 0.5, 20, 85, 644.0, 'https://archives.bulbagarden.net/media/upload/e/e9/302Sableye-Mega.png',
             35, 125, 1059860, 'Mega Sableye', 45,
             50, 1, 7, 2, 3,
-            1, 1, 7, 129, 5, 5
+            1, 1, 7, 129, 5, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4717,7 +4717,7 @@ INSERT INTO pokemons (
             303, 23.5, 1.0, 50, 105, 23.5, 'https://archives.bulbagarden.net/media/upload/8/86/303Mawile-Mega.png',
             70, 125, 800000, 'Mega Mawile', 45,
             50, 1, 1, 2, 2,
-            3, 1, 7, 210, 4, 5
+            3, 1, 7, 210, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4769,7 +4769,7 @@ INSERT INTO pokemons (
             306, 395.0, 2.2, 50, 140, 81.6, 'https://archives.bulbagarden.net/media/upload/1/10/306Aggron-Mega.png',
             35, 230, 1250000, 'Mega Aggron', 45,
             70, 1, 4, 2, 2,
-            4, 1, 2, 211, 7, 5
+            4, 1, 2, 211, 7, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4847,7 +4847,7 @@ INSERT INTO pokemons (
             310, 44.0, 1.8, 135, 75, 13.6, 'https://archives.bulbagarden.net/media/upload/b/bc/310Manectric-Mega.png',
             70, 80, 1250000, 'Mega Manectric', 45,
             70, 1, 10, 2, 2,
-            4, 1, 1, 213, 4, 5
+            4, 1, 1, 213, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -4977,7 +4977,7 @@ INSERT INTO pokemons (
             319, 130.3, 2.5, 105, 140, 20.8, 'https://archives.bulbagarden.net/media/upload/3/35/319Sharpedo-Mega.png',
             35, 70, 1250000, 'Mega Sharpedo', 60,
             70, 1, 2, 2, 3,
-            4, 1, 13, 220, 4, 5
+            4, 1, 13, 220, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5042,7 +5042,7 @@ INSERT INTO pokemons (
             323, 320.5, 2.5, 20, 120, 51.3, 'https://archives.bulbagarden.net/media/upload/9/96/323Camerupt-Mega.png',
             70, 100, 1000000, 'Mega Camerupt', 150,
             70, 1, 8, 2, 3,
-            2, 1, 1, 224, 4, 5
+            2, 1, 1, 224, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5198,7 +5198,7 @@ INSERT INTO pokemons (
             334, 20.6, 1.5, 80, 110, 9.2, 'https://archives.bulbagarden.net/media/upload/0/08/334Altaria-Mega.png',
             70, 110, 600000, 'Mega Altaria', 45,
             75, 1, 2, 2, 3,
-            6, 1, 6, 234, 4, 5
+            6, 1, 6, 234, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5471,7 +5471,7 @@ INSERT INTO pokemons (
             354, 13.0, 1.2, 75, 165, 9.0, 'https://archives.bulbagarden.net/media/upload/a/a3/354Banette-Mega.png',
             35, 75, 800000, 'Mega Banette', 45,
             64, 1, 1, 2, 2,
-            3, 1, 2, 250, 5, 5
+            3, 1, 2, 250, 5, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5549,7 +5549,7 @@ INSERT INTO pokemons (
             359, 49.0, 1.2, 115, 150, 34.0, 'https://archives.bulbagarden.net/media/upload/f/f4/359Absol-Mega.png',
             35, 60, 1059860, 'Mega Absol', 30,
             65, 1, 9, 2, 2,
-            1, 1, 1, 255, 5, 5
+            1, 1, 1, 255, 5, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5601,7 +5601,7 @@ INSERT INTO pokemons (
             362, 350.2, 2.1, 100, 120, 79.4, 'https://archives.bulbagarden.net/media/upload/0/0d/362Glalie-Mega.png',
             70, 80, 1000000, 'Mega Glalie', 75,
             80, 1, 4, 2, 3,
-            2, 1, 14, 258, 4, 5
+            2, 1, 14, 258, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5757,7 +5757,7 @@ INSERT INTO pokemons (
             373, 112.6, 1.8, 120, 145, 34.8, 'https://archives.bulbagarden.net/media/upload/f/f3/373Salamence-Mega.png',
             35, 130, 1250000, 'Mega Salamence', 45,
             95, 1, 2, 2, 3,
-            4, 1, 1, 72, 8, 5
+            4, 1, 1, 72, 8, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5809,7 +5809,7 @@ INSERT INTO pokemons (
             376, 942.9, 2.5, 110, 145, 150.9, 'https://archives.bulbagarden.net/media/upload/8/85/376Metagross-Mega.png',
             35, 150, 1250000, 'Mega Metagross', 3,
             80, 1, 2, 2, 3,
-            4, 1, 10, 270, 8, 5
+            4, 1, 10, 270, 8, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5874,7 +5874,7 @@ INSERT INTO pokemons (
             380, 52.0, 1.8, 110, 100, 16.0, 'https://archives.bulbagarden.net/media/upload/0/0f/380Latias-Mega.png',
             90, 120, 1250000, 'Mega Latias', 3,
             80, 1, 8, 2, 3,
-            4, 2, 6, 274, 11, 5
+            4, 2, 6, 274, 11, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5900,7 +5900,7 @@ INSERT INTO pokemons (
             381, 70.0, 2.3, 110, 130, 13.2, 'https://archives.bulbagarden.net/media/upload/a/a0/381Latios-Mega.png',
             90, 100, 1250000, 'Mega Latios', 3,
             80, 1, 2, 2, 3,
-            4, 2, 6, 274, 11, 5
+            4, 2, 6, 274, 11, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5926,7 +5926,7 @@ INSERT INTO pokemons (
             382, 430.0, 9.8, 90, 150, 4.5, 'https://archives.bulbagarden.net/media/upload/f/f1/382Kyogre-Primal.png',
             0, 90, 1250000, 'Primal Kyogre', 3,
             100, 1, 2, 2, 3,
-            4, 3, 13, 275, 11, 5
+            4, 3, 13, 275, 11, 1
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5952,7 +5952,7 @@ INSERT INTO pokemons (
             383, 999.7, 5.0, 90, 180, 40.0, 'https://archives.bulbagarden.net/media/upload/9/9d/383Groudon-Primal.png',
             0, 160, 1250000, 'Primal Groudon', 3,
             100, 1, 8, 2, 3,
-            4, 3, 2, 276, 11, 5
+            4, 3, 2, 276, 11, 1
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -5978,7 +5978,7 @@ INSERT INTO pokemons (
             384, 392.0, 10.8, 115, 180, 3.4, 'https://archives.bulbagarden.net/media/upload/5/58/384Rayquaza-Mega.png',
             0, 100, 1250000, 'Mega Rayquaza', 45,
             105, 1, 5, 2, 3,
-            4, 3, 4, 277, 11, 5
+            4, 3, 4, 277, 11, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -6628,7 +6628,7 @@ INSERT INTO pokemons (
             428, 28.3, 1.3, 135, 136, 16.7, 'https://archives.bulbagarden.net/media/upload/d/dc/428Lopunny-Mega.png',
             140, 94, 1000000, 'Mega Lopunny', 60,
             65, 1, 3, 2, 3,
-            2, 1, 2, 307, 4, 5
+            2, 1, 2, 307, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -6862,7 +6862,7 @@ INSERT INTO pokemons (
             445, 95.0, 1.9, 92, 170, 26.3, 'https://archives.bulbagarden.net/media/upload/b/b2/445Garchomp-Mega.png',
             70, 115, 1250000, 'Mega Garchomp', 45,
             108, 1, 2, 2, 2,
-            4, 1, 2, 323, 8, 5
+            4, 1, 2, 323, 8, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -6914,7 +6914,7 @@ INSERT INTO pokemons (
             448, 57.5, 1.3, 112, 145, 34.0, 'https://archives.bulbagarden.net/media/upload/b/b9/448Lucario-Mega.png',
             70, 88, 1059860, 'Mega Lucario', 45,
             70, 1, 2, 2, 2,
-            1, 1, 2, 326, 5, 5
+            1, 1, 2, 326, 5, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -7083,7 +7083,7 @@ INSERT INTO pokemons (
             460, 185.0, 2.7, 30, 132, 25.4, 'https://archives.bulbagarden.net/media/upload/d/dc/460Abomasnow-Mega.png',
             70, 105, 1250000, 'Mega Abomasnow', 60,
             90, 1, 9, 2, 2,
-            4, 1, 2, 335, 4, 5
+            4, 1, 2, 335, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -8123,7 +8123,7 @@ INSERT INTO pokemons (
             531, 32.0, 1.5, 50, 60, 14.2, 'https://archives.bulbagarden.net/media/upload/1/17/531Audino-Mega.png',
             70, 126, 800000, 'Mega Audino', 255,
             103, 1, 6, 2, 3,
-            3, 1, 2, 391, 4, 5
+            3, 1, 2, 391, 4, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -8435,7 +8435,7 @@ INSERT INTO pokemons (
             554, 40.0, 0.7, 50, 90, 81.6, 'https://archives.bulbagarden.net/media/upload/c/c9/554Darumaka-Galar.png',
             0, 45, 1059860, 'Galarian Darumaka', 120,
             70, 1, 8, 4, 5,
-            1, 1, 7, 408, 4, 1
+            1, 1, 7, 408, 4, 4
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -8474,7 +8474,7 @@ INSERT INTO pokemons (
             555, 120.0, 1.7, 95, 140, 41.5, 'https://archives.bulbagarden.net/media/upload/6/60/555Darmanitan-Galar.png',
             0, 55, 1059860, 'Galarian Darmanitan Standard Mode', 60,
             105, 1, 8, 4, 5,
-            1, 1, 1, 408, 4, 1
+            1, 1, 1, 408, 4, 4
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -8578,7 +8578,7 @@ INSERT INTO pokemons (
             562, 1.5, 0.5, 30, 55, 6.0, 'https://archives.bulbagarden.net/media/upload/4/46/562Yamask-Galar.png',
             0, 85, 1000000, 'Galarian Yamask', 190,
             38, 1, 1, 4, 5,
-            2, 1, 12, 415, 5, 1
+            2, 1, 12, 415, 5, 4
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -10840,7 +10840,7 @@ INSERT INTO pokemons (
             718, 27.8, 1.1, 110, 160, 23.0, 'https://archives.bulbagarden.net/media/upload/8/8f/719Diancie-Mega.png',
             70, 110, 1250000, 'Mega Diancie', 3,
             50, 1, 6, 2, 3,
-            4, 4, 12, 518, 5, 1
+            4, 4, 12, 518, 5, 2
         );
 INSERT INTO pokemons (
             id, defensa_especial, ataque_especial, total_base, experiencia_base, numero,
@@ -13403,6 +13403,7 @@ INSERT INTO pokemons (
             100, 1, 5, 4, 5,
             4, 3, 7, 652, 11, 1
         );
+
 
 -- migrate:down 
 
