@@ -1,0 +1,403 @@
+-- ============================
+-- TABLE: COLORES
+-- ============================
+CREATE TABLE colores (
+    id NUMBER(7) PRIMARY KEY,
+    nombre VARCHAR2(6) NOT NULL
+);
+
+-- SEQUENCE
+CREATE SEQUENCE colores_seq START WITH 1 INCREMENT BY 1;
+
+-- TRIGGER
+CREATE OR REPLACE TRIGGER colores_pk
+BEFORE INSERT ON colores
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT colores_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+
+-- ============================
+-- TABLE: GENERACIONES
+-- ============================
+CREATE TABLE generaciones (
+    id NUMBER(7) PRIMARY KEY,
+    nombre VARCHAR2(5) NOT NULL
+);
+
+CREATE SEQUENCE generaciones_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER generaciones_pk
+BEFORE INSERT ON generaciones
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT generaciones_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+
+------------------------------------------------------------
+-- TABLA: JUEGOS_ORIGEN
+------------------------------------------------------------
+CREATE TABLE juegos_origen (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(20)  NOT NULL
+);
+
+CREATE SEQUENCE juegos_origen_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER juegos_origen_pk
+BEFORE INSERT ON juegos_origen
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT juegos_origen_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+    ------------------------------------------------------------
+-- TABLA: TIPOS_EXPERIENCIA
+------------------------------------------------------------
+CREATE TABLE tipos_experiencia (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(15)  NOT NULL
+);
+
+CREATE SEQUENCE tipos_experiencia_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER tipos_experiencia_pk
+BEFORE INSERT ON tipos_experiencia
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT tipos_experiencia_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: JERARQUIAS
+------------------------------------------------------------
+CREATE TABLE jerarquias (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(15)  NOT NULL
+);
+
+CREATE SEQUENCE jerarquias_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER jerarquias_pk
+BEFORE INSERT ON jerarquias
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT jerarquias_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: FORMAS
+------------------------------------------------------------
+CREATE TABLE formas (
+    id      NUMBER(7)    PRIMARY KEY,
+    nombre  VARCHAR2(9)  NOT NULL
+);
+
+CREATE SEQUENCE formas_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER formas_pk
+BEFORE INSERT ON formas
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT formas_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: ESPECIES
+------------------------------------------------------------
+CREATE TABLE especies (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(21)  NOT NULL
+);
+
+CREATE SEQUENCE especies_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER especies_pk
+BEFORE INSERT ON especies
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT especies_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: ECLOSIONES
+------------------------------------------------------------
+CREATE TABLE eclosiones (
+    id     NUMBER(7)  PRIMARY KEY,
+    ciclo  NUMBER     NOT NULL,
+    pasos  NUMBER     NOT NULL
+);
+
+CREATE SEQUENCE eclosiones_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER eclosiones_pk
+BEFORE INSERT ON eclosiones
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT eclosiones_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: VARIANTES
+------------------------------------------------------------
+CREATE TABLE variantes (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(15)  NOT NULL
+);
+
+CREATE SEQUENCE variantes_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER variantes_pk
+BEFORE INSERT ON variantes
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT variantes_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: EFECTIVIDADES
+------------------------------------------------------------
+CREATE TABLE efectividades (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(20)  NOT NULL
+);
+
+CREATE SEQUENCE efectividades_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER efectividades_pk
+BEFORE INSERT ON efectividades
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT efectividades_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: TIPOS
+------------------------------------------------------------
+CREATE TABLE tipos (
+    id      NUMBER(7)    PRIMARY KEY,
+    nombre  VARCHAR2(9)  NOT NULL
+);
+
+CREATE SEQUENCE tipos_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER tipos_pk
+BEFORE INSERT ON tipos
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT tipos_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: GENEROS
+------------------------------------------------------------
+CREATE TABLE generos (
+    id      NUMBER(7)    PRIMARY KEY,
+    nombre  VARCHAR2(9)  NOT NULL
+);
+
+CREATE SEQUENCE generos_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER generos_pk
+BEFORE INSERT ON generos
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT generos_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: HABILIDADES
+------------------------------------------------------------
+CREATE TABLE habilidades (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(20)  NOT NULL
+);
+
+CREATE SEQUENCE habilidades_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER habilidades_pk
+BEFORE INSERT ON habilidades
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT habilidades_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: GRUPO_HUEVO
+------------------------------------------------------------
+CREATE TABLE grupo_huevo (
+    id      NUMBER(7)     PRIMARY KEY,
+    nombre  VARCHAR2(15)  NOT NULL
+);
+
+CREATE SEQUENCE grupo_huevo_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER grupo_huevo_pk
+BEFORE INSERT ON grupo_huevo
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT grupo_huevo_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+------------------------------------------------------------
+-- TABLA: POKEMONS
+------------------------------------------------------------
+CREATE TABLE pokemons (
+    id                 NUMBER(7)     PRIMARY KEY,
+    numero             NUMBER        NOT NULL,
+    nombre             VARCHAR2(33)  NOT NULL,
+    hp                 NUMBER        NOT NULL,
+    ataque             NUMBER        NOT NULL,
+    defensa            NUMBER        NOT NULL,
+    ataque_especial    NUMBER        NOT NULL,
+    defensa_especial   NUMBER        NOT NULL,
+    velocidad          NUMBER        NOT NULL,
+    total_base         NUMBER        NOT NULL,
+    ratio_captura      NUMBER        NOT NULL,
+    amistad_base       NUMBER        NOT NULL,
+    experiencia_base   NUMBER        NOT NULL,
+    experiencia_nv100  NUMBER        NOT NULL,
+    tiene_evolucion    NUMBER(1)     NOT NULL,
+    altura             NUMBER        NOT NULL,
+    peso               NUMBER        NOT NULL,
+    bmi                NUMBER        NOT NULL,
+    imagen             VARCHAR2(100) NOT NULL,
+
+    color_id           NUMBER(7)     NOT NULL,
+    generacion_id      NUMBER(7)     NOT NULL,
+    juego_origen_id    NUMBER(7)     NOT NULL,
+    tipo_experiencia_id NUMBER(7)    NOT NULL,
+    jerarquia_id       NUMBER(7)     NOT NULL,
+    forma_id           NUMBER(7)     NOT NULL,
+    especie_id         NUMBER(7)     NOT NULL,
+    eclosion_id        NUMBER(7)     NOT NULL,
+    variante_id        NUMBER(7)     NOT NULL,
+
+    FOREIGN KEY (color_id)            REFERENCES colores(id),
+    FOREIGN KEY (generacion_id)       REFERENCES generaciones(id),
+    FOREIGN KEY (juego_origen_id)     REFERENCES juegos_origen(id),
+    FOREIGN KEY (tipo_experiencia_id) REFERENCES tipos_experiencia(id),
+    FOREIGN KEY (jerarquia_id)        REFERENCES jerarquias(id),
+    FOREIGN KEY (forma_id)            REFERENCES formas(id),
+    FOREIGN KEY (especie_id)          REFERENCES especies(id),
+    FOREIGN KEY (eclosion_id)         REFERENCES eclosiones(id),
+    FOREIGN KEY (variante_id)         REFERENCES variantes(id)
+);
+
+CREATE SEQUENCE pokemons_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER pokemons_pk
+BEFORE INSERT ON pokemons
+FOR EACH ROW
+BEGIN
+    IF :new.id IS NULL THEN
+        SELECT pokemons_seq.NEXTVAL
+        INTO :new.id
+        FROM dual;
+    END IF;
+END;
+/
+
+------------------------------------------------------------
+-- TABLAS PUENTE (SIN ID, SIN SECUENCIA, SIN TRIGGER)
+------------------------------------------------------------
+-- pokemons_efectividades_tipos
+CREATE TABLE pokemons_efectividades_tipos (
+    pokemon_id      NUMBER(7) NOT NULL,
+    efectividad_id  NUMBER(7) NOT NULL,
+    tipo_id         NUMBER(7) NOT NULL,
+    FOREIGN KEY (pokemon_id)     REFERENCES pokemons(id),
+    FOREIGN KEY (efectividad_id) REFERENCES efectividades(id),
+    FOREIGN KEY (tipo_id)        REFERENCES tipos(id)
+);
+
+-- pokemons_tipos
+CREATE TABLE pokemons_tipos (
+    pokemon_id  NUMBER(7) NOT NULL,
+    tipo_id     NUMBER(7) NOT NULL,
+    FOREIGN KEY (pokemon_id) REFERENCES pokemons(id),
+    FOREIGN KEY (tipo_id)    REFERENCES tipos(id)
+);
+
+-- pokemons_generos
+CREATE TABLE pokemons_generos (
+    porcentaje   NUMBER      NOT NULL,
+    pokemon_idv  NUMBER(7)   NOT NULL,
+    genero_id    NUMBER(7)   NOT NULL,
+    FOREIGN KEY (pokemon_idv) REFERENCES pokemons(id),
+    FOREIGN KEY (genero_id)   REFERENCES generos(id)
+);
+
+-- pokemons_habilidades
+CREATE TABLE pokemons_habilidades (
+    pokemon_id   NUMBER(7) NOT NULL,
+    habilidad_id NUMBER(7) NOT NULL,
+    FOREIGN KEY (pokemon_id)   REFERENCES pokemons(id),
+    FOREIGN KEY (habilidad_id) REFERENCES habilidades(id)
+);
+
+-- pokemons_grupo_huevos
+CREATE TABLE pokemons_grupo_huevos (
+    pokemon_id     NUMBER(7) NOT NULL,
+    grupo_huevo_id NUMBER(7) NOT NULL,
+    FOREIGN KEY (pokemon_id)     REFERENCES pokemons(id),
+    FOREIGN KEY (grupo_huevo_id) REFERENCES grupo_huevo(id)
+);
