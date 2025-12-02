@@ -7,3 +7,6 @@ CREATE TABLE juegos_origen (
 -- migrate:down
 
 DROP TABLE juegos_origen;
+
+
+

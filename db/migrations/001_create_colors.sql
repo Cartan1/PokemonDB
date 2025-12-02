@@ -8,3 +8,7 @@ CREATE TABLE colores (
 -- migrate:down
 
 DROP TABLE colores;
+
+
+
+

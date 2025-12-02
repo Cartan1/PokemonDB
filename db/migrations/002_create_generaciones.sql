@@ -8,3 +8,8 @@ CREATE TABLE generaciones (
 -- migrate:down
 
 DROP TABLE generaciones;
+
+
+
+
+
