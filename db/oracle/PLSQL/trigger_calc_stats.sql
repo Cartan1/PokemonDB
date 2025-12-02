@@ -12,3 +12,5 @@ BEGIN
         + NVL(:NEW.velocidad, 0);
 END;
 /
+
+
